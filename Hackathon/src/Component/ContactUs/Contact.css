@@ -1,0 +1,309 @@
+.contact-container {
+    display: flex; /* Use flexbox to layout children */
+    justify-content: space-between; /* Space between the left and right divs */
+    padding: 1.25rem; /* Add some padding */
+    width: 100%; /* Optional: Set a max width for the container */
+    margin-bottom: 1.875rem;
+    height: auto;
+    margin:1.25rem auto 1.875rem auto;
+    max-width: 95.6875rem;
+}
+
+.contact-left,
+.contact-right {
+    flex: 1; /* Make both divs take equal space */
+    padding: 1.25rem; /* Add padding for inner content */
+} 
+.contact-left h1{
+    font-family: Space Grotesk;
+font-size: 2.25rem;
+font-weight: 700;
+line-height: 2.5rem;
+letter-spacing: -0.02em;
+text-align: left;
+
+}
+.contact-left h1 span{
+    color:#00A6F6;
+    font-family: Space Grotesk;
+font-size: 2.25rem;
+font-weight: 700;
+line-height: 2.5rem;
+letter-spacing: -0.02em;
+text-align: left;
+
+}
+.contact-left p{
+    color: #999999;
+
+}
+.contact-left h2{
+    font-family: Space Grotesk;
+font-size: 1.25rem;
+font-weight: 700;
+line-height: 1.595rem;
+letter-spacing: 0.02em;
+text-align: left;
+
+}
+.contact-left span{
+    font-family: Space Grotesk;
+font-size: 1rem;
+font-weight: 500;
+line-height: 1.5rem;
+text-align: left;
+color: #BBCACC;
+
+
+}
+.contact-left span span{
+    color :pink
+}
+.image-containerContact {
+    position: relative; /* Establish a positioning context for absolute children */
+    width: 30rem; /* Set a width for the container */
+    height: 34.375rem; /* Set a height for the container */
+    margin-bottom: 10%;
+}
+
+.image {
+    position: absolute; /* Allow the images to overlap */
+    width: 30rem; /* Fixed width for the images */
+    height: 34.375rem; /* Fixed height for the images */
+    border-radius: 1.25rem 0rem 0rem 0rem; /* Rounded corners */
+    border: 0.125rem solid transparent; /* Use solid border for visibility; adjust as needed */
+    opacity: 0.8; /* Adjusted opacity for visibility */
+    transition: opacity 0.3s ease; /* Optional transition for opacity change */
+}
+
+.image:first-child {
+    z-index: -3; /* Lower z-index for the first image */
+    left: 0rem; /* Position for the first image */
+}
+
+.image:nth-child(2) {
+    z-index: -2; /* Higher z-index for the second image */
+    left: 0.625rem; /* Position for the second image */
+}
+
+.image:nth-child(3) {
+    z-index: -1; /* Higher z-index for the last image to appear on top */
+    left: 1.25rem; /* Position for the third image */
+}
+
+
+.contact-right {
+   
+    display: flex; /* Flex layout for the right section */
+    justify-content: center; /* Center the images */
+    align-items: center; /* Center align items */
+    height: 100%; /* Ensure it has height to center children */
+}
+
+/* Optional styles for the Bootstrap card appearance */
+.reachout {
+    position: absolute; /* Position ReachOut absolutely within the container */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the width and height of the component */
+    z-index: 10; /* Highest z-index to ensure it appears on top of images */
+    width: 30rem;
+    height: 35.625rem;
+    
+    padding: 0.9375rem 0rem 0rem 0rem;
+    gap: 0rem;
+    border-radius: 1.25rem ;
+    border: 0.125rem 0rem 0rem 0rem;
+    opacity: 0rem;
+
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #f9f9f9; /* Light background for the container */
+}
+.flag-icon {
+    width: 1.25rem; /* Adjust the size of the flag icon */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 0.3125rem; /* Space between the flag and text */
+  }
+  
+
+.card-reachout {
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 0.625rem; /* Rounded corners */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 37.5rem; /* Max width for the card */
+    margin: 1.25rem auto; /* Center the card */
+    padding: 1.25rem; /* Padding around the content */
+    margin:2.5rem;
+  
+}
+
+.card-body {
+    padding: 0.9375rem; /* Inner padding */
+}
+
+.card-title {
+    font-size: 24px; /* Title size */
+    margin-bottom: 0.625rem; /* Space below title */
+    font-family: Space Grotesk;
+font-size: 1.25rem;
+font-weight: 700;
+line-height: 1.5rem;
+letter-spacing: -0.02em;
+text-align: left;
+
+}
+
+.card-text {
+    margin-bottom: 0.9375rem; /* Space below text */
+    font-family: Space Grotesk;
+font-size: 0.875rem;
+font-weight: 500;
+line-height: 1.25rem;
+text-align: left;
+
+}
+
+.mb-3 {
+    margin-bottom: 16px; /* Margin bottom for form groups */
+    position: relative;
+    
+    top: 0.625rem;
+}
+
+.form-label {
+    margin-bottom: 8px; /* Space below labels */
+    display: block; /* Labels on their own line */
+}
+
+.form-control {
+    width: 100%; /* Full width for inputs */
+    padding: 0.625rem; /* Padding for inputs */
+    border: 0.0625rem solid #ccc; /* Light border */
+    border-radius: 0.3125rem; /* Rounded corners */
+}
+
+.row {
+    display: flex; /* Flexbox for row */
+    align-items: center; /* Center items vertically */
+}
+
+.country-container, 
+.isd-code-container, 
+.phone-container {
+    margin-right: 0.3125rem; /* Space between inputs */
+}
+
+.country-container {
+    flex: 0.5; /* Take up remaining space */
+}
+
+.isd-code-container {
+    width: 5rem; /* Fixed width for ISD code input */
+}
+
+.phone-container {
+    flex: 2; /* Phone number takes more space */
+    position: relative;
+    top: -0.9375rem;
+}
+
+.submit-btn {
+    background: #8D3AEA;
+    /* Button color */
+    color: white; /* Text color */
+    padding: 0.625rem 0.9375rem; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 0.3125rem; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s; /* Transition for hover effect */
+    position: relative;
+    top: 0.625rem;
+    left:6.25rem;
+    width: 8.125rem;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+@media(max-width:945px){
+    .contact-container{
+        flex-direction: column;
+        align-items: self-end;
+    }
+}
+@media (max-width: 600px) {
+    .contact-container {
+      flex-direction: column; /* Stack the left and right sections */
+      align-items: center; /* Center the elements */
+      width: 100%; /* Full width */
+      padding: 1rem; /* Adjust padding */
+      margin-top: 10px; /* Adjust top margin */
+      margin-bottom: 1.25rem;
+    }
+  
+    .contact-left,
+    .contact-right {
+      flex: 1; /* Keep equal space */
+      padding: 0.9375rem; /* Adjust padding */
+      width: 100%; /* Take full width */
+    }
+  
+    .contact-left h1,
+    .contact-left h1 span {
+      font-size: 1.5rem; /* Reduce heading size */
+      text-align: center; /* Center align */
+    }
+  
+    .contact-left h2 {
+      font-size: 1.125rem; /* Slightly reduce subheading */
+      text-align: center; /* Center align text */
+    }
+  
+    .contact-left span {
+      font-size: 0.875rem; /* Reduce span font size */
+      text-align: center; /* Center text */
+    }
+  
+    .image-containerContact {
+      width: 100%; /* Full width for the image container */
+      height: auto; /* Auto height */
+      margin-bottom: 1.25rem; /* Add space below images */
+    }
+  
+    .image {
+      width: 100%; /* Make images responsive */
+      height: auto; /* Auto height to maintain aspect ratio */
+      border-radius: 1rem; /* Adjust border radius */
+    }
+  
+    .reachout {
+      width: 100%; /* Full width */
+      height: auto; /* Auto height */
+      padding: 1rem; /* Adjust padding */
+      top: auto; /* Remove specific top position */
+      left: auto; /* Remove specific left position */
+      transform: none; /* Reset transformation */
+    }
+  
+    .card-reachout {
+      max-width: 100%; /* Make the card responsive */
+      margin: 0; /* Remove extra margins */
+      padding: 1rem; /* Adjust padding */
+    }
+  
+    .phone-container {
+      margin-top: 0.625rem; /* Add margin to the top of phone input */
+      width: 100%; /* Full width for phone input */
+    }
+  
+    .submit-btn {
+      width: 100%; /* Full width for submit button */
+      left: 0; /* Reset position */
+      margin-top: 1rem; /* Add margin on top */
+      text-align: center; /* Center align */
+    }
+  }
+  
+
+  

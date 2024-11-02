@@ -1,0 +1,323 @@
+.footer {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 1.25rem; /* Padding around the footer */
+    text-align: left; /* Align text to the left */
+    width: 100%;
+    height: auto;
+    background: #04092C;
+    color:#FFFFFF;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.footer-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between logo and quote */
+    align-items: center; /* Center align items */
+}
+
+.footer-logo img {
+    width: 18.75rem; /* Set width for the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.footer-quote {
+    max-width: 37.5rem; /* Max width for the quote section */
+    position: relative;
+    right: 12.5rem;
+}
+
+.footer-quote blockquote {
+    font-style: italic; /* Italic style for the quote */
+    margin: 0; /* Remove default margin */
+    font-family: Space Grotesk;
+font-size: 1.5625rem;
+font-weight: 700;
+line-height: 1.875rem;
+text-align: left;
+
+}
+
+
+
+.footer-divider {
+    margin: 1.25rem 0; /* Margin for the horizontal line */
+    border: 0; /* Remove default border */
+    border-top: 0.0625rem solid #ccc; /* Custom top border */
+}
+
+.footer-sections {
+    display: flex; /* Flexbox for sections */
+    justify-content: space-between; /* Space between sections */
+    flex-wrap: wrap; /* Allow wrapping */
+}
+.footer-section-left{
+    display: flex;
+    flex-grow: 0.8;
+}
+.footer-section {
+    flex: 1; /* Equal space for each section */
+    padding: 0.625rem; /* Padding for sections */
+    min-width: 12.5rem; /* Minimum width for responsiveness */
+}
+.newsletter{
+    display: flex;
+    justify-content: flex-end;
+    width: -webkit-fill-available;
+}
+
+.newsletter-container {
+    background-color: #f8f9fa; /* Light background for the newsletter */
+    padding: 1.25rem; /* Spacing around the content */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    height: auto;
+    width:25rem;
+    /* position: relative;
+    right: 9.375rem; */
+    border-radius: 1.25rem; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+}
+.newsletter-container label{
+    color:  #4F4F4F;
+    
+    font-family: Space Grotesk;
+font-size: 0.75rem;
+font-weight: 700;
+line-height: 1.25rem;
+letter-spacing: -0.02em;
+text-align: left;
+
+}
+.newsletter-container h1{
+    font-family: Space Grotesk;
+font-size: 1.25rem;
+font-weight: 700;
+line-height: 1.5rem;
+text-align: left;
+color: #1E1E1E;
+
+}
+
+.newsletter-inputs {
+    display: flex; /* Use flexbox for layout */
+    gap: 0.3125rem; /* Space between the inputs */
+    margin: 0.625rem 0; /* Margin for spacing */
+}
+
+.newsletter-select {
+    
+    padding: 0.125rem; /* Padding for better touch targets */
+    border: 0.0625rem solid #ced4da; /* Border styling */
+    border-radius: 0.25rem; /* Rounded corners */
+    width: 4.6875rem;
+    height: 2.5rem;
+    position: relative;
+    top: 1.25rem;
+    font-size: 1.25rem; /* Font size */
+}
+
+.newsletter-input {
+    flex: 2;
+    padding: 0.625rem; /* Padding for the textarea */
+    border: 0.0625rem solid #ced4da; /* Border styling */
+    position: relative;
+    top: 1.0625rem;
+    border-radius: 0.25rem; /* Rounded corners */
+}
+.newsletter-container p{
+    font-family: Space Grotesk;
+font-size: 0.625rem;
+font-weight: 500;
+line-height: 0.7975rem;
+text-align: left;
+color: #999999;
+margin: 0.4375rem auto;
+
+}
+.newsletter-button {
+    background-color: #8D3AEA; /* Bootstrap primary color */
+    color: white; /* Text color */
+    padding: 0.625rem 1.25rem; /* Button padding */
+    border: none; /* No border */
+    border-radius: 1.25rem; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    align-self: center; 
+    width: 50%;
+    /* position: relative;
+    top: 1.25rem;
+    right: -3.75rem; */
+}
+
+.newsletter-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.copyright-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between text and icons */
+    align-items: center; /* Center vertically */
+    padding: 0.625rem 1.25rem; /* Padding for spacing */
+    background: #8D3AEA;
+    /* Dark background for footer */
+    width: 100%;
+    color: white; /* White text color */
+   height: auto;
+    z-index: 4;
+}
+
+.copyright-text {
+    font-family: Space Grotesk;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    left: 3.75rem;
+
+    
+}
+.copyright-highlight {
+    font-family: Space Grotesk;
+font-size: 1.25rem;
+font-weight: 700;
+line-height: 1.875rem;
+text-align: center;
+
+}
+
+.social-icons {
+    display: flex; /* Use flexbox for icon layout */
+    gap: 0.9375rem; /* Space between icons */
+}
+
+.social-icon {
+    width: 1.875rem; /* Set a width for the images */
+    height: 1.5rem; /* Set a height for the images */
+    transition: transform 0.3s; /* Transition effect for hover */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+@media (max-width: 75rem) {
+    .footer-content {
+        flex-direction: column; /* Stack the logo and quote vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .footer-logo img {
+        width: 15.625rem; /* Adjust the logo width */
+    }
+
+    .footer-quote {
+        max-width: 100%; /* Full width for the quote section */
+        right: 0; /* Center the quote */
+    }
+
+    .newsletter-container {
+        width: 100%; /* Full width for the newsletter section */
+        right: 0; /* Reset the right position */
+    }
+
+    .newsletter-inputs {
+        flex-direction: column; /* Stack inputs vertically */
+    }
+
+    .newsletter-select, .newsletter-input, .newsletter-button {
+        width: 100%; /* Full width for inputs and button */
+        top: 0.625rem; /* Adjust vertical position */
+    }
+
+    .copyright-container {
+        flex-direction: column; /* Stack copyright text and icons */
+        text-align: center; /* Center everything */
+    }
+
+    .copyright-text {
+        left: 0; /* Reset left position */
+    }
+}
+
+@media (max-width: 48rem) {
+    .footer {
+        padding: 0.9375rem; /* Reduce padding */
+        height: auto; /* Let height adjust dynamically */
+    }
+
+    .footer-logo img {
+        width: 12.5rem; /* Smaller logo */
+    }
+
+    .newsletter-container {
+        padding: 0.625rem; /* Reduce padding */
+        width: 100%; /* Full width on smaller screens */
+        right: 0; /* Reset right position */
+    }
+
+    .footer-quote blockquote {
+        font-size: 1.25rem; /* Smaller font size for quote */
+        line-height: 1.5625rem; /* Adjust line height */
+    }
+
+    .copyright-text {
+        font-size: 1rem; /* Smaller font size for copyright text */
+    }
+
+    .social-icons {
+        gap: 0.625rem; /* Reduce space between social icons */
+    }
+
+    .social-icon {
+        width: 1.5rem; /* Smaller icon size */
+        height: 1.25rem;
+    }
+}
+
+@media (max-width: 580px) {
+    .footer-section-left{
+        flex-direction: column;
+    }
+    .footer-content, .footer-sections {
+        flex-direction: column; /* Stack all sections */
+        text-align: center; /* Center-align text */
+    }
+
+    .footer-logo img {
+        width: 9.375rem; /* Smaller logo */
+    }
+
+    .newsletter-container {
+        padding: 0.3125rem; /* Further reduce padding */
+        width: 100%; /* Full width on very small screens */
+    }
+
+    .newsletter-button {
+        width: 100%; /* Full width button */
+        right: 0; /* Reset position */
+    }
+
+    .copyright-container {
+        flex-direction: column;
+        padding: 0.625rem; /* Less padding for small screens */
+    }
+
+    .social-icons {
+        justify-content: center; /* Center icons */
+        gap: 0.5rem; /* Reduce gap further */
+    }
+
+    .social-icon {
+        width: 1.25rem; /* Even smaller icons */
+        height: 1.125rem;
+    }
+}
+@media (max-width: 430px){
+    .navbar-left{
+        flex-direction: column;
+    }
+}

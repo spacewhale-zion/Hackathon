@@ -1,0 +1,281 @@
+/* Main Card Container */
+.card-container {
+    width: 100%; /* Make the card take full width */
+    max-width: 20rem; /* Set a max-width to prevent cards from being too wide */
+    height: auto; /* Let the height adjust based on content */
+    opacity: 1;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    margin: 1.25rem auto;
+    background-color: #fff;
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding/margins are counted */
+    overflow: hidden; /* Prevent content overflow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+
+
+/* Top Image Styling */
+.card-image {
+    width: 100%; /* Make image take full width */
+    height: 17.25rem; /* Fixed height for image */
+    border-radius: 0.625rem 0.625rem 0 0; /* Slight rounding at the top */
+    object-fit: cover; /* Cover the area without distortion */
+    box-sizing: border-box;
+    border-radius: 9.375rem;
+
+}
+
+/* Name Styling */
+.card-name {
+    margin: 0.9375rem 0;
+    font-family: Space Grotesk, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.595rem;
+    letter-spacing: 0.02em;
+    /* text-align: left; */
+    color: #333;
+}
+
+
+/* Side by Side Divs Styled as Buttons */
+.card-info {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.25rem;
+    gap: 1rem; /* Add space between the info-boxes */
+    margin:0 auto;
+}
+
+.info-box {
+    width: 50%; /* Reduced width slightly to accommodate the gap */
+    display: flex;
+    padding: 0.625rem;
+    background: #52BBE9;
+    color: #143751;
+    border-radius: 1.5625rem; /* Rounded corners */
+    text-align: center; /* Center the text */
+    cursor: pointer; /* Pointer cursor to mimic a button */
+    transition: background-color 0.3s ease;
+    font-family: Space Grotesk;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    /* text-align: left; */
+}
+
+
+.info-box:hover {
+    background-color: #7327cc; /* Darker purple on hover */
+}
+
+.info-box h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.info-box p {
+    margin: 0.3125rem 0;
+    font-size: 0.875rem;
+    color: white;
+}
+
+/* Text Below the Divs */
+.card-text {
+    margin: 1.25rem 0;
+    font-size: 0.875rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Button Styling */
+.card-button {
+    width: 12.875rem;
+    height: 2.5rem;
+    top: 21.875rem;
+    left: 2.25rem;
+    padding: 0.5rem 1.5rem; /* Adjusted padding */
+    gap: 0.5rem;
+    border-radius: 0.75rem 0rem 0rem 0rem;
+    opacity: 1; /* Set opacity to make it visible */
+    background-color: #8D3AEA; /* Purple background */
+    color: white;
+    border: none;
+    border-radius: 1.5625rem; /* Rounded corners */
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0.125rem 0.125rem 0.625rem 0rem #00000026;
+    transition: background-color 0.3s ease;
+  margin: 0 auto;
+}
+
+.card-button:hover {
+    background-color: #7327cc; /* Darker purple on hover */
+}
+
+.top-counselors {
+    margin-top: 5rem;
+    width: 100%;
+    height: auto;
+    top: 45.6875rem;
+    gap: 0rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    opacity: 0rem;
+    margin: 52px auto;
+    margin-bottom: 40px;
+    height: auto;
+    
+}
+.top-counselors h1{
+ /* position: relative; */
+ font-family: Space Grotesk;
+font-size: 2.25rem;
+font-weight: 700;
+line-height: 2.5rem;
+text-align: left;
+width: 20.9375rem;
+height: 2.5rem;
+margin-bottom: 6.625rem;
+/* top: 5rem;
+left: 32.1875rem; */
+gap: 0rem;
+justify-content: center;
+display: flex;
+
+opacity: 0rem;
+
+}
+
+.top-counselors-container {
+    display: flex; /* Use flexbox for side-by-side layout */
+    justify-content: center; /* Center the cards horizontally */
+    flex-wrap: wrap; /* Allow cards to wrap onto the next line if needed */
+    /* position: relative; */
+width: 88.8125rem;
+height: 31.375rem;
+/* top: 11.5rem;
+left: 8.125rem; */
+gap: 1rem;
+height: auto;
+margin: 0 auto;
+max-width: 1531px;
+
+
+}
+
+
+/* Default (for larger screens like desktops) */
+@media (min-width: 1920px){
+
+    .top-counselors-container{
+        /* overflow: auto; */
+    }
+}
+@media (max-width: 1200px) {
+    .card-container {
+        width: 17.5rem;
+        /* height: 28.875rem; */
+    }
+    .info-box {
+        width: auto;
+    }
+   
+    .card-name {
+        font-size: 1.25rem;
+    }
+
+    .card-button {
+        width: 12.875rem;
+    }
+}
+
+/* Large Tablets (768px to 1200px) */
+@media (max-width: 1200px) and (min-width: 768px) {
+    .card-container {
+        width: 15rem;
+        /* height: 25rem; */
+    }
+
+    .card-name {
+        font-size: 1.125rem;
+    }
+
+    .card-button {
+        width: 10.875rem;
+    }
+
+    .top-counselors h1 {
+        font-size: 2rem;
+        left: 30rem;
+    }
+
+    .top-counselors-container {
+        /* width: 55rem; */
+        margin-left: 5rem;
+    }
+}
+
+/* Tablets and Small Laptops (600px to 768px) */
+@media (max-width: 768px) and (min-width: 600px) {
+    .card-container {
+         width: 13.5rem;
+       /* height: 24rem; */
+    }
+
+    .card-name {
+        font-size: 1rem;
+    }
+
+    .card-button {
+        width: 9.875rem;
+        font-size: 0.875rem;
+    }
+
+    .top-counselors h1 {
+        font-size: 1.75rem;
+        left: 20rem;
+    }
+
+    .top-counselors-container {
+        width: 36rem;
+        left: 3rem;
+    }
+}
+
+/* Mobile Phones (Up to 600px) */
+@media (max-width: 600px) {
+    
+    .card-info {
+        flex-direction: column; /* Stack the info boxes vertically */
+        margin: 0.625rem 0;
+        gap: 1rem; /* Add space between stacked info boxes */
+    }
+
+    .info-box {
+      /* Ensure info boxes take full width */
+        margin-bottom: 0.625rem; /* Add space between stacked info boxes */
+    }
+
+    .top-counselors-container {
+        width: 100%; /* Ensure the container fits the screen */
+        padding: 0 1rem; /* Add padding to prevent overlap */
+        flex-wrap: wrap; /* Allow the cards to wrap in column layout */
+        gap: 1rem; /* Add space between the cards */
+    }
+}

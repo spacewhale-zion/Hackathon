@@ -1,0 +1,65 @@
+/* src/components/SignUp.css */
+.SignUp-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5), /* Dark overlay */
+    rgba(0, 0, 0, 0.5) /* Dark overlay */
+  ), 
+  url('../../../public/signup.jpg');
+ 
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+}
+
+
+.SignUp-form {
+  background-color: rgba(255, 255, 255, 0.9); /* White background with some transparency */
+  padding: 1.25rem;
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2); /* Subtle shadow for the form */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25rem; /* Fixed width for the form */
+}
+
+.SignUp-title {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.SignUp-mb-3 {
+  margin-bottom: 0.9375rem;
+}
+
+.SignUp-label {
+  margin-bottom: 0.3125rem;
+  font-weight: bold;
+}
+
+.SignUp-form-control {
+  padding: 0.625rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.3125rem;
+  width: 100%;
+}
+
+.SignUp-btn {
+  padding: 0.625rem;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 80%;
+  left:2.3125rem ;
+  position: relative;
+}
+
+.SignUp-btn:hover {
+  background-color: #0056b3; /* Darker shade for hover */
+}

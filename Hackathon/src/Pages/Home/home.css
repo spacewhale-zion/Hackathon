@@ -1,0 +1,49 @@
+.home{
+    display:flex;
+    flex-direction:column;
+}
+.myproject  span{
+color:#00A6F6
+}
+.project-card {
+    background-color: #007bff;
+    background: linear-gradient(96.7deg, #9747FF 0.54%, #0096E0 53.84%, #68E1B9 102.06%);
+     /* Bootstrap primary blue */
+    color: white; /* White text for contrast */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover */
+    border: none; /* Remove default card border */
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  }
+  
+  .card-title {
+    font-size: 1.25rem; /* Increase title font size */
+    font-weight: bold; /* Bold title */
+  }
+  
+  .card-text {
+    font-size: 1rem; /* Adjust description font size */
+  }
+  
+  .btn-light {
+    background-color: rgb(141, 58, 234); /* Light background for button */
+    color: white; /* White text for button */
+    padding: 10px;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+  .btn-light:hover {
+    background-color: #e2e6ea; /* Slightly darker on hover */
+  }
+  .add-project{
+    display: flex;
+    gap: 2rem;
+  }
+  

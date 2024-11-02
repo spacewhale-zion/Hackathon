@@ -1,0 +1,67 @@
+/* Contact Section Styling */
+.aman1-contact-section {
+  width: 100%;
+  height:80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  background-color: #577783;
+  
+}
+
+/* Left Section Styling */
+.aman1-left-contact-section {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+.aman1-left-contact-section h2 span{
+  color:rgb(0, 166, 246)
+}
+.aman1-left-contact-section p{
+  
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+
+}
+/* Right Section Styling */
+.aman1-right-contact-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image Styling */
+.aman1-right-contact-section img {
+  width: 100%;        /* Make image take up full width of the right section */
+  height: auto;       /* Maintain the image aspect ratio */
+  max-width: 100%;    /* Ensure image does not exceed its container */
+  object-fit: cover;  /* Fit the image within the container without stretching */
+  border-radius: 10px;
+}
+
+/* Responsive Adjustment for Smaller Screens */
+@media (max-width: 768px) {
+  .aman1-contact-section {
+      flex-direction: column;  /* Stack content vertically on smaller screens */
+  }
+
+  .aman1-left-contact-section,
+  .aman1-right-contact-section {
+      flex: 1;
+      width: 100%;
+  }
+}

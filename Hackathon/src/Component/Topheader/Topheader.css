@@ -1,0 +1,110 @@
+
+
+:root {
+    --PrimaryColor: #04092C; /* Define the primary color variable */
+}
+.topheader {
+    box-sizing: border-box;
+    position: relative; 
+    width: 100%; /* Full width */
+    height: auto; /* Fixed height */
+    background-color: var(--PrimaryColor); /* Primary Color */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items between */
+    align-items: center; /* Center items vertically */
+    padding: 0 6.25rem; /* Horizontal padding */
+    color: white; /* Text color */
+    font-family: Arial, sans-serif; /* Font styling */
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+    margin: 0 auto; 
+    /* max-width: 95.6875rem; */
+    
+  }
+  
+  /* Left Section for Phone Number and Icons */
+  .left-section {
+    display: flex; /* Flexbox for aligning items */
+    align-items: center; /* Center icons and text vertically */
+  }
+  
+  /* Icon Styles */
+  .icon {
+    color: white; /* Icon color */
+    margin: 0 0.3rem; /* Spacing between icons */
+    font-size: 1.125rem; /* Icon size */
+  }
+  
+  /* Specific styling for phone icon */
+  .phone-icon {
+    margin-right: 0.3rem; /* Space before phone number */
+  }
+  
+  /* Right Section for Refund Policies and HelpDesk */
+  .right-side {
+    display: flex; /* Flexbox for aligning items */
+    align-items: center; /* Center items vertically */
+  }
+  
+  /* Right-side span styling */
+  .right-side span {
+    margin-left: 0.3rem; /* Space between items */
+  }
+  
+  /* Vertical line between Refund Policies and HelpDesk */
+  .vertical-line {
+    height: 2vh; /* Height of the vertical line */
+    width: 0.1vw; /* Width of the vertical line */
+    background-color: white; /* Color of the vertical line */
+    margin: 0 0.3rem; /* Space around the vertical line */
+  }
+ /* Normal View (Desktop size, non-zoomed, or 100% zoom) */
+@media (max-width: 1200px) {
+    .topheader {
+        padding: 0 6.25rem; /* Standard padding */
+        height: 3vw; /* Standard height */
+        font-size: 1rem; /* Standard font size */
+    }
+    .icon {
+        font-size: 1.125rem; /* Standard icon size */
+    }
+}
+
+/* Larger View (Zoomed out, simulating a wider viewport) */
+@media (min-width: 1920px) {
+  
+    .topheader {
+        padding: 0 7.5rem; /* Increase padding for a larger viewport */
+      
+        font-size: 18px; 
+    }
+    .icon {
+        font-size: 1.5rem; /* Increase icon size */
+    }
+    .vertical-line {
+        height: 2.5vh; /* Taller vertical line */
+    }
+}
+
+/* Smaller View (Zoomed in, simulating a narrower viewport) */
+@media (max-width: 1200px) {
+    .topheader {
+        padding: 0 3.125rem; /* Reduced padding for smaller screens */
+        height: 3vw; /* Maintain height in vw */
+        font-size: 0.875rem; /* Smaller font size */
+    }
+    .icon {
+        font-size: 1rem; /* Reduced icon size */
+    }
+}
+
+/* Smallest View (Further zooming in or smaller mobile screen) */
+@media (max-width: 48rem) {
+    .topheader {
+        padding: 0 1.25rem; /* Further reduce padding */
+        height: 2vw; /* Smaller height */
+        font-size: 0.75rem; /* Small font size */
+    }
+    .icon {
+        font-size: 0.875rem; /* Even smaller icons */
+    }
+}
